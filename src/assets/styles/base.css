@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --color-accent1: 205 171 0;
+      --color-accent2: 200 200 100;
+      --color-bkg: 203 213 225;
+      --color-content: 15 23 42;
+    }
+    @media (prefers-color-scheme:dark) {
+        :root {
+          --color-accent1: 205 171 0;
+          --color-accent2: 200 200 50;
+          --color-bkg: 15 23 42;
+          --color-content: 203 213 225;
+        }
+        
+    }
+    :root[data-theme="dark"] {
+        --color-accent1: 205 171 0;
+        --color-accent2: 200 200 50;
+        --color-bkg: 15 23 42;
+        --color-content: 203 213 225;
+    }
+    :root[data-theme="cool"] {
+        --color-accent1: 205 171 0;
+        --color-accent2: 35 187 25;
+        --color-bkg: 130, 10, 148;
+        --color-content: 250, 210, 198;
+      }
+}
